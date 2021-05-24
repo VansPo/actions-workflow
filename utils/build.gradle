@@ -8,6 +8,10 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+affectedTestConfiguration {
+    jvmTestTask = "test"
+}
+
 dependencies {
     testImplementation 'junit:junit:4.+'
 }

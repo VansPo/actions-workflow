@@ -4,6 +4,6 @@ import org.junit.Test
 class UtilTest {
     @Test
     fun utilTest() {
-        assertEquals(true, 1 + 1)
+        assertEquals(false, 1 + 1)
     }
 }

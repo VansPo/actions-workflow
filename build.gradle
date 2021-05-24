@@ -26,9 +26,6 @@ subprojects {
 
 affectedModuleDetector {
     baseDir = "${project.rootDir}"
-    pathsAffectingAllModules = [
-            "buildSrc/"
-    ]
     logFilename = "output.log"
     logFolder = "${project.rootDir}/output"
     compareFrom = "ForkCommit"
