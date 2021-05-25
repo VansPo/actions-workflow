@@ -21,12 +21,6 @@ jobs:
       - name: Add PR base ref
         run: git fetch --depth=1 origin +refs/heads/${{github.base_ref}}:refs/remotes/origin/${{github.base_ref}}
 
-      - name: Show current branch
-        run: git rev-parse --abbrev-ref HEAD
-
-      - name: Show all branches
-        run: git show-branch -a
-      
       - name: Copy CI gradle.properties
         run: mkdir -p ~/.gradle ; cp .github/ci-gradle.properties ~/.gradle/gradle.properties
 
